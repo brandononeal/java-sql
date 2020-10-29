@@ -206,7 +206,7 @@ Below are some empty tables to be used to normalize the database
 - Not all of the cells will contain data in the final solution
 - Feel free to edit these tables as necessary
 
-Table Name: Person
+Table Name: People
 
 | person_id | person_name | fenced_yard | city_dweller |
 | --------- | ----------- | ----------- | ------------ |
@@ -214,31 +214,27 @@ Table Name: Person
 | 2         | Bob         | No          | No           |
 | 3         | Sam         | Yes         | No           |
 
-Table Name: Pet Name
+Table Name: Pets
 
-| pet_id | person_id | pet_name |
-| ------ | --------- | -------- |
-| 1      | 1         | Ellie    |
-| 2      | 1         |          |
-| 3      | 1         |          |
-| 4      | 1         |          |
-| 5      | 1         |          |
-| 6      | 1         |          |
-| 7      | 1         |          |
+| pet_id | pet_name   | type_id | person_id |
+| ------ | ---------- | ------- | --------- |
+| 1      | Ellie      | 1       | 1         |
+| 2      | Joe        | 2       | 2         |
+| 3      | Ginger     | 1       | 3         |
+| 4      | Tiger      | 3       | 1         |
+| 5      | Miss Kitty | 3       | 3         |
+| 6      | Toby       | 4       | 1         |
+| 7      | Bubble     | 5       | 3         |
 
-Table Name: Pet Type
+Table Name: Pet Types
 
-|     |     |     |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |
-
----
+| type_id | pet_type |
+| ------- | -------- |
+| 1       | Dog      |
+| 2       | Horse    |
+| 3       | Cat      |
+| 4       | Turtle   |
+| 5       | Fish     |
 
 ### Stretch Goals
 
